@@ -102,7 +102,7 @@ function LoadDefaultModel(malePed, cb)
 
 		if IsModelInCdimage(characterModel) and IsModelValid(characterModel) then
 			SetPlayerModel(PlayerId(), characterModel)
-			SetPedDefaultComponentVariation(playerPed)
+			SetPedDefaultComponentVariation(PlayerPedId())
 		end
 
 		SetModelAsNoLongerNeeded(characterModel)
